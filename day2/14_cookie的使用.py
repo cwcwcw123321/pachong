@@ -35,10 +35,6 @@ def use_cookie():
     response=opener.open(request)
     print(response.read().decode())
 
-
-
-
-
 #获取cookie从文件中
 
 #访问页面
