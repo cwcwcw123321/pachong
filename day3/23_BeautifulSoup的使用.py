@@ -28,3 +28,5 @@ if type(soup.strong.string)==Comment:
     print(soup.strong.prettify())#原样子显示
 else:
     print(soup.strong.text)
+
+# css 标签名不加任何修饰，类名前加点，id名前加 #
