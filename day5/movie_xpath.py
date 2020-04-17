@@ -25,8 +25,8 @@ def parse_index(html):
 
 def parse_info(html):
     e=etree.HTML(html)
-    name =e.xpath('//h1[@class="name"]/text()')[0]
-    types = e.xpath('//li[@class="ellipsis"]/a/text()')[0]
+    name =e.xpath('//h1[@class="name"]/text()')
+    types = e.xpath('//li[@class="ellipsis"]/a/text()')
     actors = e.xpath('//li[@class="celebrity actor"]/div/a/text()')
     actors=format_actors(actors)
     return {
