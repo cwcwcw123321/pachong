@@ -13,9 +13,9 @@ while True:
     num+=1
     sleep(randint(10,25))
     html = driver.page_source
-    Html=etree.HTML(html)
-    names=Html.xpath('//i[@class="nick"]')
-    counts=Html.xpath('//i[@class="js-num"]')
+    e=etree.HTML(html)
+    names=e.xpath('//i[@class="nick"]')
+    counts=e.xpath('//i[@class="js-num"]')
 
     # names =driver.find_elements_by_xpath('//i[@class="nick"]')
     # counts=driver.find_elements_by_xpath('//i[@class="js-num"]')
