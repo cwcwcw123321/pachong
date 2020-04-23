@@ -51,11 +51,12 @@ class Downloader():
 
 
 # 解析
-class Parser():
+class Parser:
     def parse(self,html):
         e=etree.HTML(html)
         datas=self.parse_info(e)
         urls=self.parse_urls(e)
+        return datas,urls
 
     def parse_info(self,e):
         spans=e.xpath('//div[@class="content"]/span[1]')
