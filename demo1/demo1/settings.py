@@ -64,9 +64,9 @@ DOWNLOAD_DELAY = 1
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'demo1.pipelines.Demo1Pipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'demo1.pipelines.Demo1Pipeline': 300,#300为优先级数字  数字越小优先级越高
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
