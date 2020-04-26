@@ -8,12 +8,12 @@
 
 class XiaoshuoPipeline(object):
     def open_spider(self,spider):
-        self.file=open('wddf.txt','w',encoding='utf-8')
+        self.file=open('lwcs.txt','w',encoding='utf-8')
     def process_item(self, item, spider):
-        title=item['titile']
-        content = item['content']
-        info=title+'\n'+content+'\n'
-        # info=title+"\n"
+        title=item['title']
+        # content = item['content']
+        # info=title+'\n'+content+'\n'
+        info=title+"\n"
         self.file.write(info)
         self.file.flush()#刷新文件流
         return item
