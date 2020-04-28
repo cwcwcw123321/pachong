@@ -65,12 +65,13 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'tupian.pipelines.ImagesPipeline': 300,
-    # #使用imagepipeline 得用专用的
-   # 'scrapy.contrib.pipeline.images.ImagesPipeline':300
-    # 'scrapy.pipelines.images.ImagesPipeline':300
+   'tupian.pipelines.ImagePipeline': 300,
+      #使用imagepipeline 得用专用的
+
+       # 'scrapy.pipelines.images.ImagesPipeline':300
 }
-IMAGES_STORE='e:/img'
+
+IMAGES_STORE ='e:/img'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
