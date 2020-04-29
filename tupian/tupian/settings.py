@@ -61,6 +61,7 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    'tupian.middlewares.UserAgentDownloadMiddleware': 343,
+   'tupian.proxymiddleware.ProxyMiddleware':344
 }
 
 # Enable or disable extensions
