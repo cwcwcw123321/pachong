@@ -10,9 +10,7 @@ class ZolSpider(scrapy.Spider):
     def parse(self, response):
         image_url = response.xpath('//img[@id="bigImg"]/@src').extract()
         image_name = response.xpath('string(//h3)').extract_first()
-
         yield {
-            # 一定是image_urls   函数接收的是image_urls 不是image_url
             "image_urls": image_url,
             "image_name": image_name
         }
